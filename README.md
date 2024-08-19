@@ -11,7 +11,7 @@ npm install h3p-server
 ## Usage
 
 ```typescript
-import { createServer, Router } from 'h3p-server';
+import { createServer, Router } from 'simple-http-server';
 
 const router = new Router();
 
@@ -20,7 +20,10 @@ router.addRoute('GET', '/', (req, res) => {
   res.end('Hello, World!');
 });
 
-const server = createServer(router, 3000);
+const server = createServer(router);
+server.listen(3000, () => {
+  console.log('Server is running on http://localhost:3000');
+});
 ```
 
 ## API
