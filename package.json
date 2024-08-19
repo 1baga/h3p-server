@@ -1,7 +1,7 @@
 {
   "name": "h3p-server",
   "author": "Umar Adam <umarmash@gmail.com>",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "A simple http server",
